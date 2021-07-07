@@ -1,31 +1,40 @@
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
-  width: 90%;
-  max-width: 1440px;
+  max-width: 100%;
   margin: auto;
-  margin-top: 10%;
-  border: 1px solid red;
+  margin-top: 1.5rem;
+  background: rgb(63, 94, 251);
+`;
+
+const HeaderContainer = styled.div`
+  width: 100%;
   text-align: center;
 `;
 
 const HeaderTitle = styled.h1`
+  width: 100%;
   color: #fff;
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 25px;
   font-weight: 800;
+  margin: auto;
+  font-size: 1.3rem;
 `;
 
 const HeaderContent = styled.p`
   color: #fff;
   font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
 `;
 
 const Header = () => {
   return (
     <StyledHeader>
-      <HeaderTitle>Jean-Claude Van-Damme best quotes</HeaderTitle>
-      <HeaderContent>Text placeholder generator</HeaderContent>
+      <HeaderContainer>
+        <HeaderTitle>Jean-Claude Van-Damme</HeaderTitle>
+        <HeaderTitle> best quotes</HeaderTitle>
+        <HeaderContent>Text placeholder generator</HeaderContent>
+      </HeaderContainer>
     </StyledHeader>
   );
 };
